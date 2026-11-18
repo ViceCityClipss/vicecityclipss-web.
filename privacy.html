@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · ViceCityClipss Automation</title>
+  <meta name="description" content="How ViceCityClipss Automation accesses, uses, stores and protects Google user data, and how to revoke access.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>ViceCityClipss Automation</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: November 18, 2026 · Last updated: November 18, 2026</p>
+
+      <p>
+        This Privacy Policy explains how <strong>ViceCityClipss Automation</strong> (“the application”)
+        accesses, uses, stores and protects data, including data obtained from Google APIs. The application
+        is a private tool operated by the owner of the YouTube channel
+        <a href="https://www.youtube.com/@ViceCityClipsOFI">ViceCityClipss (@ViceCityClipsOFI)</a>
+        (“the owner”, “we”). It is used only by the owner to manage the owner's own channel and is not offered
+        to the public.
+      </p>
+
+      <h2>1. Summary</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Topic</th><th>Short answer</th></tr>
+          <tr><td>Who uses the application</td><td>Only the channel owner. There are no other users and no sign-ups.</td></tr>
+          <tr><td>Google permission requested</td><td><code>youtube.upload</code> only.</td></tr>
+          <tr><td>Where data is stored</td><td>Only on the owner's own computer. There is no application server or cloud database.</td></tr>
+          <tr><td>How tokens are protected</td><td>Encrypted with Windows Data Protection (DPAPI), tied to the owner's Windows account, in a folder only that account can read.</td></tr>
+          <tr><td>Sale or sharing of data</td><td>None. Data is never sold, rented or shared with third parties.</td></tr>
+          <tr><td>Advertising or tracking</td><td>None. Google user data is never used for advertising. This website uses no cookies or analytics.</td></tr>
+          <tr><td>How to revoke access</td><td>At <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (see section 9).</td></tr>
+        </table>
+      </div>
+
+      <h2>2. Use of YouTube API Services</h2>
+      <p>
+        The application uses <strong>YouTube API Services</strong> to upload videos to YouTube. By authorizing
+        the application, the account holder also agrees to be bound by the
+        <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is
+        described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+      </p>
+
+      <h2>3. Google user data the application accesses</h2>
+      <p>The application requests one OAuth scope:</p>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Scope</th><th>What it allows</th><th>How the application uses it</th></tr>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/youtube.upload</code></td>
+            <td>Upload videos to the authorized YouTube channel and manage those uploads.</td>
+            <td>Upload finished Shorts with a title, description, tags, category, privacy status, optional scheduled publish time, and the “altered or synthetic content” disclosure when applicable.</td>
+          </tr>
+        </table>
+      </div>
+      <p>
+        When the owner authorizes the application, Google issues OAuth tokens (an access token and a refresh
+        token). After each upload, YouTube returns the new video's ID and its upload and privacy status.
+        The application does not request, read or store the owner's name, email address, contacts, comments,
+        subscribers, watch history, YouTube Analytics or any data from other Google services.
+      </p>
+      <p>
+        Separately, to research topics, the application may query <em>public</em> YouTube information (such as
+        public video titles and view counts) using an API key. That information is publicly available and is
+        not tied to the owner's Google account.
+      </p>
+
+      <h2>4. How the data is used</h2>
+      <ul>
+        <li>OAuth tokens are used only to authenticate requests from the owner's computer to Google in order to upload videos to the owner's channel and to renew access when it expires.</li>
+        <li>The video ID and upload status returned by YouTube are saved in the application's local history so the owner can track which Shorts were uploaded and avoid publishing repeated content.</li>
+        <li>Google user data is not used for advertising, is not used to build user profiles, is not sold, and is not used to train artificial-intelligence or machine-learning models.</li>
+      </ul>
+
+      <h2>5. Limited Use disclosure</h2>
+      <p>
+        ViceCityClipss Automation's use and transfer of information received from Google APIs to any other app
+        will adhere to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements.
+      </p>
+
+      <h2>6. How data is stored and protected</h2>
+      <ul>
+        <li><strong>Local only.</strong> All data is stored on the owner's Windows computer. The application has no server, backend, cloud storage or database operated by us.</li>
+        <li><strong>Encrypted tokens.</strong> OAuth tokens are encrypted with the Windows Data Protection API (DPAPI) under the owner's Windows user account, so the token file cannot be decrypted by other user accounts or on other computers.</li>
+        <li><strong>Restricted folder.</strong> Tokens and the OAuth client configuration are kept in a folder whose file permissions allow access only to the owner's Windows account and the operating system.</li>
+        <li><strong>Not published.</strong> Credential and token files are excluded from source control and are never included in published content.</li>
+        <li><strong>Encrypted transport.</strong> All communication with Google uses HTTPS. The local authorization step uses a temporary loopback address (<code>127.0.0.1</code>) on the owner's computer with PKCE and a state check.</li>
+      </ul>
+
+      <h2>7. Sharing and disclosure</h2>
+      <p>
+        Google user data is not shared with, sold to, or transferred to any third party. Data is sent only to
+        Google/YouTube, as required to perform the uploads the owner requested. If the law requires the
+        disclosure of data, we would comply only to the extent required.
+      </p>
+
+      <h2>8. Retention and deletion</h2>
+      <ul>
+        <li>OAuth tokens are kept on the owner's computer until access is revoked or the owner deletes them. When access is revoked through the application, the local token file is deleted immediately.</li>
+        <li>If access is revoked from the Google Account page, the stored tokens stop working; the application then deletes or replaces them the next time it runs, and in any case the owner can delete them at any time.</li>
+        <li>The local upload history (video IDs, titles, upload dates and review results) is kept on the owner's computer for as long as the owner uses the application and can be deleted at any time by deleting the application's data folder.</li>
+        <li>Videos already uploaded to YouTube are governed by YouTube and can be managed or deleted in YouTube Studio.</li>
+      </ul>
+
+      <h2>9. How to revoke access</h2>
+      <ol>
+        <li>Open the Google Account permissions page: <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a> (also reachable from <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>).</li>
+        <li>Select <strong>ViceCityClipss Automation</strong>.</li>
+        <li>Choose <strong>Delete all connections</strong> / <strong>Remove access</strong>.</li>
+      </ol>
+      <p>
+        On the owner's computer, the command <code>node src/cli.js auth revoke</code> also asks Google to revoke
+        the token and deletes the local token file. After revocation the application can no longer upload
+        videos until it is authorized again.
+      </p>
+
+      <h2>10. This website</h2>
+      <p>
+        This website is a static information page. It has no forms, no accounts, no cookies, no analytics and
+        no third-party scripts or fonts, and we do not collect information through it. The hosting provider
+        may process technical information such as IP addresses in its server logs under its own privacy policy.
+      </p>
+
+      <h2>11. Children</h2>
+      <p>
+        The application is a private tool used only by its adult owner. It is not directed to children and does
+        not knowingly collect information from children.
+      </p>
+
+      <h2>12. Changes to this policy</h2>
+      <p>
+        If the application's use of data changes — for example, if it requests an additional Google permission —
+        this page will be updated, with a new “Last updated” date, <strong>before</strong> the change takes effect.
+      </p>
+
+      <h2>13. Contact</h2>
+      <p>
+        Questions or requests about this policy or about the application's use of Google user data:
+        <a href="mailto:cuentasecfifa1@gmail.com">cuentasecfifa1@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 ViceCityClipss · Not affiliated with Google, YouTube, Rockstar Games or Take-Two Interactive</span>
+      <span><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></span>
+    </div>
+  </footer>
+</body>
+</html>

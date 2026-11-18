@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ViceCityClipss Automation</title>
+  <meta name="description" content="ViceCityClipss Automation is a private tool used by the owner of the ViceCityClipss YouTube channel to prepare and upload original GTA VI Shorts to that channel.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>ViceCityClipss Automation</a>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <span class="badge">Private tool · single user</span>
+        <h1>ViceCityClipss Automation</h1>
+        <p class="lead">
+          A private desktop tool used by the owner of the YouTube channel
+          <a href="https://www.youtube.com/@ViceCityClipsOFI">ViceCityClipss (@ViceCityClipsOFI)</a>
+          to research, prepare, review and upload original English-language YouTube Shorts about
+          Grand Theft Auto VI to that channel.
+        </p>
+      </section>
+
+      <div class="notice">
+        <strong>This is not a public service.</strong> There are no sign-ups and no user accounts.
+        The tool runs on the channel owner's own Windows computer and is used only to manage the
+        owner's own YouTube channel. It has <strong>not</strong> been verified by Google.
+      </div>
+
+      <h2>What the application does</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Research</h3>
+          <p>Looks at publicly available information about GTA VI trends to choose topics for new Shorts.</p>
+        </div>
+        <div class="card">
+          <h3>2. Create &amp; edit</h3>
+          <p>Prepares original English commentary and edits vertical videos locally with FFmpeg, using only footage the owner recorded, licensed or was authorized to use.</p>
+        </div>
+        <div class="card">
+          <h3>3. Review</h3>
+          <p>Runs automated quality, originality and licensing checks. A video that fails any check is never uploaded.</p>
+        </div>
+        <div class="card">
+          <h3>4. Upload</h3>
+          <p>Uploads approved Shorts to the owner's own YouTube channel through the YouTube Data API, with the title, description, privacy setting and schedule chosen by the tool.</p>
+        </div>
+      </div>
+
+      <h2>Google and YouTube permissions</h2>
+      <p>
+        The application uses YouTube API Services. It requests a single Google OAuth permission:
+      </p>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Permission (scope)</th><th>Why it is needed</th></tr>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/youtube.upload</code><br>“Manage your YouTube videos” (upload)</td>
+            <td>To upload finished Shorts, with their title, description, tags and privacy setting, to the channel the owner authorized.</td>
+          </tr>
+        </table>
+      </div>
+      <p>
+        The application does not request access to the owner's Gmail, Google Drive, contacts or any other
+        Google service. Authorization tokens are stored only on the owner's computer, encrypted.
+        Full details are in the <a href="privacy.html">Privacy Policy</a>.
+      </p>
+
+      <h2>Content principles</h2>
+      <ul>
+        <li>Every Short focuses exclusively on Grand Theft Auto VI and includes original commentary.</li>
+        <li>Only footage that the owner recorded, footage with a compatible license, or footage used with the creator's documented permission is edited. Leaked material is never used.</li>
+        <li>Synthetic (AI-generated) narration, when used, is disclosed to YouTube as altered or synthetic content.</li>
+        <li>Videos are uploaded as private by default.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this application or its use of Google user data:
+        <a href="mailto:cuentasecfifa1@gmail.com">cuentasecfifa1@gmail.com</a>
+      </p>
+
+      <h2>Disclaimers</h2>
+      <p>
+        ViceCityClipss and ViceCityClipss Automation are independent fan projects. They are not affiliated
+        with, endorsed by or sponsored by Google LLC, YouTube, Rockstar Games or Take-Two Interactive.
+        YouTube is a trademark of Google LLC. Grand Theft Auto, GTA and Rockstar Games are trademarks of
+        Take-Two Interactive Software, Inc.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 ViceCityClipss</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:cuentasecfifa1@gmail.com">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>
